@@ -12,7 +12,7 @@ public class Task1 {
 		System.out.println("oddNums: " + removeEven(nums));
 	}
 
-	public static List<Integer> removeEven(List<Integer> nums) {
+	private static List<Integer> removeEven(List<Integer> nums) {
 		List<Integer> oddNums = new ArrayList<>();
 		for (Integer num : nums) {
 			if (num % 2 != 0) {
