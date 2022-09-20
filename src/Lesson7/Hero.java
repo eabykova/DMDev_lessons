@@ -1,9 +1,12 @@
 package Lesson7;
 
-public abstract class Hero implements Fightable {
+import Lesson9.Weapon.Weapon;
+
+public abstract class Hero<T> implements Fightable {
 	private String name;
 	private int damagePossibility;
 	private int health;
+	private T weapon;
 
 	public Hero(String name, int health, int damagePossibility) {
 		this.name = name;
@@ -29,5 +32,13 @@ public abstract class Hero implements Fightable {
 
 	public String getName() {
 		return name;
+	}
+
+	public T getWeapon() {
+		return weapon;
+	}
+
+	public void setWeapon(T weapon) {
+		this.weapon = weapon;
 	}
 }

@@ -1,6 +1,8 @@
 package Lesson7;
 
-public class Mage extends Hero implements Mortal, Healable {
+import Lesson9.Weapon.MagicWeapon;
+
+public class Mage<T extends MagicWeapon> extends Hero<T> implements Mortal, Healable {
 	public Mage(String name,int health, int damagePossibility) {
 		super(name, health, damagePossibility);
 	}

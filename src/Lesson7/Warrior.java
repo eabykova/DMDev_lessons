@@ -1,6 +1,8 @@
 package Lesson7;
 
-public class Warrior extends Hero implements Mortal {
+import Lesson9.Weapon.MeleeWeapon;
+
+public class Warrior<T extends MeleeWeapon> extends Hero<T> implements Mortal {
 	public Warrior(String name, int health, int damagePossibility) {
 		super(name, health, damagePossibility);
 	}

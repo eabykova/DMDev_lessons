@@ -1,6 +1,8 @@
 package Lesson7;
 
-public class Archer extends Hero implements Mortal {
+import Lesson9.Weapon.RangeWeapon;
+
+public class Archer<T extends RangeWeapon> extends Hero<T> implements Mortal {
 	public Archer(String name, int health, int damagePossibility) {
 		super(name, health, damagePossibility);
 	}
