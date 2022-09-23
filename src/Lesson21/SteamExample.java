@@ -1,6 +1,5 @@
 package Lesson21;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SteamExample {
