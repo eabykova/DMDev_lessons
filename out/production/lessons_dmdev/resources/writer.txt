@@ -1,2 +1,4 @@
 Another one new string
 Java the best!
+Another one new string
+Java the best!
