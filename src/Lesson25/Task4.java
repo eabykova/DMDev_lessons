@@ -11,7 +11,7 @@ public class Task4 {
 		String line = Files.readString(path);
 		String result = line.replace("public", "private");
 
-		Path newPath = Path.of("resources", "test1.txt");
+		Path newPath = Path.of("src","resources", "test1.txt");
 		Files.writeString(newPath, result);
 	}
 }

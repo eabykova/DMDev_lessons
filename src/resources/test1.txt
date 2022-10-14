@@ -1,8 +1,31 @@
-r111
-ddddd2222222
-r33
-ttttt
-r444ttt
-r555555555555555
-r66dd6666666
-r7
+package Lesson25;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+private class Task3 {
+	private static void main(String[] args) throws IOException {
+		Path path = Path.of("src", "resources", "test.txt");
+		Files.readAllLines(path).stream()
+				.map(Task3::findMaxDigitsCount)
+				.forEach(System.out::println);
+	}
+
+	private static Integer findMaxDigitsCount(String line) {
+		int result = 0;
+		int counter = 0;
+		for (int i = 0; i < line.length(); i++) {
+			if (Character.isDigit(line.charAt(i))) {
+				counter++;
+			} else {
+				if (result < counter) {
+					result = counter;
+				}
+				counter = 0;
+			}
+		}
+//		result = Math.max(counter, result);
+		return result;
+	}
+}

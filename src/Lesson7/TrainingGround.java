@@ -25,7 +25,6 @@ public class TrainingGround {
 		mage.heal(archer);
 		archer.sayStage();
 		System.out.println();
-
 		System.out.println("And now all Heroes try to make damage to Demon " + demon.getName() + ":");
 		makeAttack(demon, archer, warrior, mage);
 		demon.sayStage();
