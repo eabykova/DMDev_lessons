@@ -1,0 +1,17 @@
+;52nosseL egakcap
+
+;eliF.oi.avaj tropmi
+;noitpecxEOI.oi.avaj tropmi
+;seliF.elif.oin.avaj tropmi
+;htaP.elif.oin.avaj tropmi
+
+{ 4ksaT ssalc cilbup
+{ noitpecxEOI sworht )sgra ][gnirtS(niam diov citats cilbup	
+;)"avaj.3ksaT" ,"52nosseL" ,"crs"(fo.htaP = htap htaP		
+;)htap(gnirtSdaer.seliF = enil gnirtS		
+;)"etavirp" ,"cilbup"(ecalper.enil = tluser gnirtS		
+
+;)"txt.1tset" ,"secruoser","crs"(fo.htaP = htaPwen htaP		
+;)tluser ,htaPwen(gnirtSetirw.seliF		
+}	
+}
