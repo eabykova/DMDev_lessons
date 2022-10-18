@@ -18,14 +18,15 @@ public class BayerThread implements Runnable {
 						Cashbox cashbox = cashboxes.remove();
 						System.out.println(Thread.currentThread().getName() + " serviced at the " + cashbox);
 //						Thread.sleep(5L);
-						cashboxes.wait(5L);
+						cashboxes.wait(5L);//поток ждет определенное время
 						System.out.println(Thread.currentThread().getName() + " free " + cashbox);
 						cashboxes.add(cashbox);
-						cashboxes.notifyAll();
+						cashboxes.notifyAll();//используется для уведомления остальных потоков о том,
+												//что работа может быть продолжена
 						break;
 					} else {
 //						Thread.sleep(5L);
-						cashboxes.wait();
+						cashboxes.wait();//поток ждет, пока не освободится монитор объекта
 						System.out.println(Thread.currentThread().getName() + " waiting for free cashbox");
 					}
 				}
